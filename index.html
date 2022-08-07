@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی</title>
+
+
+    <!-- for slider card --> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- end -->
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons-1.7.2/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- back to top -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bi-arrow-up'
+        style='font-size:25px'></i>
+    </button>
+    <!-- end -->
+
+    <header class="headerIndex">
+        <div class="container-fluid listBox header" id="myHeader">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-2 col-5 text-center logosticky"><img  class="logo img-fluid" src="img/amoozesh2.png" alt=""></div>
+                <div class="col-md-2 col-5 text-center logosticky2"><img style="filter: drop-shadow(8px 8px 5px #222);" class="logo img-fluid" src="img/amoozesh.png" alt=""></div>
+                <div class=" col-md-7  d-none d-lg-block mt-2 mx-auto"  >
+                    <ul class="indexList">
+                        <li class="colorLi" id="bring1">
+                            <div class="d-flex ">
+                                <p>خانه</p><i class="bi-plus iconPlus"></i><i class="bi-dash iconDash"></i>
+                            </div>
+                            <div class="line"></div>
+
+                            <div class="listBox2 dropSticky">
+                                <ul class="list2 listSticky">
+                                    <li>خانه1</li>
+                                    <li>خانه2</li>
+                                    <li style="border: none;">خانه3</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="colorLi">
+                            <div class="d-flex ">
+                                <p>درباره</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="colorLi">
+                            <div class="d-flex ">
+                                <p>صفحات</p><i class="bi-plus iconPlus"></i><i class="bi-dash iconDash"></i>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="colorLi">
+                            <div class="d-flex ">
+                                <p>سرویس ها</p><i class="bi-plus iconPlus"></i><i class="bi-dash iconDash"></i>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="colorLi">
+                            <div class="d-flex ">
+                                <p>پروژه ها</p><i class="bi-plus iconPlus"></i><i class="bi-dash iconDash"></i>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="colorLi">
+                            <div class="d-flex ">
+                                <p>وبلاگ</p><i class="bi-plus iconPlus"></i><i class="bi-dash iconDash"></i>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="colorLi">
+                            <div class="d-flex ">
+                                <p>تماس</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 col-lg-1 text-center mx-3 mx-md-0 justify-content-between row pt-1 align-items-center ">
+                    <!-- d-none d-sm-block -->
+                    <i class="col-6  bi-search icon1Index mx-auto colorLi "></i>
+                    <i class="col-6  bi-x icon2Index mx-auto colorLi "></i>
+
+                    <form action="" class="inline inputSrch2 col-3 ">
+                        <div class="input-icons ">
+                                <i class="fa bi-search icon"></i>
+                                <input class="input-field " type="text" placeholder="جستجو کنید...">
+                        </div>
+                    </form>
+
+                    <i onclick="menu()" id="menu" class="col-6 bi-list menu d-block d-lg-none mx-auto"></i>
+
+
+                </div>
+                <div class="col-md-2  d-none d-lg-block row pt-1 mx-auto ">
+
+                    
+                    <button class="col-9 btn1 ">
+                        <p class="pBtn">ورود</p>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+
+        </div>
+
+        <!-- start burger mebu -->
+        <div class="menubox">
+
+           <div onclick="dropdown(this)" class="indrop1">
+            <div class="row  align-items-center justify-content-between p-2 col-12 mx-auto">
+                <div class="col-9 drop-P">خانه</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+           <!--  -->
+           <div onclick="dropdown(this)" class="indrop1">
+            <div class="row  align-items-center justify-content-between p-2 col-12 mx-auto">
+                <div class="col-9 drop-P">درباره ما</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+            <!--  -->
+           <div onclick="dropdown(this)" class="indrop1">
+            <div class="row  align-items-center justify-content-between p-2 col-12 mx-auto">
+                <div class="col-9 drop-P">صفحات</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+
+           <div onclick="dropdown(this)" class="indrop1">
+            <div class="row  align-items-center justify-content-between p-2 col-12 mx-auto">
+                <div class="col-9 drop-P">سرویس ها</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+
+           <div onclick="dropdown(this)" class="indrop1">
+            <div class="row  align-items-center justify-content-between p-2 col-12 mx-auto">
+                <div class="col-9 drop-P">پروژه ها</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+
+           <div onclick="dropdown(this)" class="indrop1">
+            <div class="row  align-items-center justify-content-between p-2 col-12 mx-auto">
+                <div class="col-9 drop-P">وبلاگ</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+
+           <div onclick="dropdown(this)" class="indrop1 ">
+            <div class="row  align-items-center justify-content-between p-2  col-12 mx-auto">
+                <div class="col-9 drop-P">تماس</div>
+                <div class="col-1"><i class="bi-plus plusDrop"></i><i class="bi-dash dashDrop"></i></div>
+            </div>
+            <div class="dropdown2 col-9 mx-auto p-3 mt-2 pb-0">
+                <p>خانه1</p>
+                <p>خانه2</p>
+                <p style="border: none;padding-bottom:0px ;">خانه3</p>
+            </div>
+           </div>
+            
+        </div>
+
+        <!-- end burger menu -->
+
+
+        <div class="container mt-5">
+            <div class="row">
+
+
+                <div class="col-md-7 pt-5 anim1">
+                    <p class="p2">بهترین امنیت سایبری برای شما</p>
+                    <p class="p3 mt-2">ما شرکت پیشرو در یادگیری ماشین آلات و هوش مصنوعی هستیم</p>
+
+                    <div class="col-12 pe-5 row align-items-center mt-5">
+                        <button class="col-6 col-md-3 btn2 ">
+                            <p class="pBtn2">درباره ما</p>
+                        </button>
+                        <div class="col-3 text-center"><a class="play-btn mx-auto pt-2"><i
+                                    style="font-size:35px;color: #E45826;" class="bi-play"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-5 mt-md-0"><img class="img-fluid anim2" src="img/hero-1.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="shape">
+            <img src="img/shape-3.png" alt="">
+        </div>
+    </header>
+    <!-- end header -->
+
+ 
+
+    <section class="sec1">
+
+        <div class="container">
+            <div class="row F-boxes1">
+
+                <div class="col-md-4 col-12 p-3 mx-auto">
+                    <div class="col-12 boxes1">
+                        <i class="bi-bug"></i>
+                        <p class="p4">فناوری علم داده ها</p><br>
+                        <p class="p5 pt1">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                        <div class="boxbefore "></div>   
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 p-3 mx-auto">
+                    <div class="col-12 boxes1">
+                        <i class="bi-bug"></i>
+                        <p class="p4">فناوری علم داده ها</p><br>
+                        <p class="p5 pt1">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                        <div class="boxbefore"></div>       
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 p-3 mx-auto">
+                    <div class="col-12 boxes1">
+                        <i class="bi-bug"></i>
+                        <p class="p4">فناوری علم داده ها</p><br>
+                        <p class="p5 pt1">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                        <div class="boxbefore"></div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="sec2">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-10 mx-auto text-center pt-4"><img class="img-fluid" src="img/01.png" alt=""></div>
+                <div class="col-md-6 col-10 mx-auto ">
+                    <div class="d-flex align-items-center">
+                        <div class="line2"></div>
+                        <p class="p6 me-3 pt-3">درباره ما</p>
+                    </div>
+
+                    <p class="p7">ما خدمات یادگیری ماشین و هوش مصنوعی را برای شما <span style="color: #E45826;">ارائه</span> می دهیم</p>
+                    <p class="p8 text-muted">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                        محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+
+                    <div class="d-flex">
+                        <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش ها بیندازید</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش ها بیندازید</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش ها بیندازید</p>
+                    </div>
+
+                    <button style="background-color: #E45826;" class=" btn2 col-9 col-sm-6 col-md-4 mt-3 me-3">
+                        <p class="pBtn2">درباره ما</p>
+                    </button>                    
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="sec3">
+
+        <div class="d-flex align-items-center mx-auto text-center col-2">
+            <div class="line2 ms-1 mx-auto"></div>
+            <p class="p6 me-1 pt-3 mx-auto">سرویس ها</p>
+        </div>
+
+        <p class="p7 text-center">چیزی که ما <span>پیشنهاد</span> میدیم</p>
+
+        <div class="lineAnimation mx-auto"></div>
+
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-md-4 col-8 p-3 mx-auto">
+                    <div class="boxes2 col-12 mx-auto text-center">
+                        <div class="boxIcon mx-auto"><i class="icon3 bi-bug"></i></div>
+                        <p class="p4 mt-4">فناوری علم داده ها</p><br>
+                        <p class="p5">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                        <div class="align-items-center learnMore"><p class="learnP">بیشتر بدانید <i class="bi-chevron-left lefticon"></i></p></div>   
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-8 p-3 mx-auto">
+                    <div class="boxes2 col-12 mx-auto text-center">
+                        <div class="boxIcon mx-auto"><i class="icon3 bi-bug"></i></div>
+                        <p class="p4 mt-4">فناوری علم داده ها</p><br>
+                        <p class="p5">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                            <div class="align-items-center learnMore"><p class="learnP">بیشتر بدانید <i class="bi-chevron-left lefticon"></i></p></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-8 p-3 mx-auto">
+                    <div class="boxes2 col-12 mx-auto text-center">
+                        <div class="boxIcon mx-auto"><i class="icon3 bi-bug"></i></div>
+                        <p class="p4 mt-4">فناوری علم داده ها</p><br>
+                        <p class="p5">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                            <div class="align-items-center learnMore"><p class="learnP">بیشتر بدانید <i class="bi-chevron-left lefticon"></i></p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div class="row">
+
+                <div class="col-md-4 col-8 p-3 mx-auto">
+                    <div class="boxes2 col-12 mx-auto text-center">
+                        <div class="boxIcon mx-auto"><i class="icon3 bi-bug"></i></div>
+                        <p class="p4 mt-4">فناوری علم داده ها</p><br>
+                        <p class="p5">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                        <div class="align-items-center learnMore"><p class="learnP">بیشتر بدانید <i class="bi-chevron-left lefticon"></i></p></div>   
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-8 p-3 mx-auto">
+                    <div class="boxes2 col-12 mx-auto text-center">
+                        <div class="boxIcon mx-auto"><i class="icon3 bi-bug"></i></div>
+                        <p class="p4 mt-4">فناوری علم داده ها</p><br>
+                        <p class="p5">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                            <div class="align-items-center learnMore"><p class="learnP">بیشتر بدانید <i class="bi-chevron-left lefticon"></i></p></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-8 p-3 mx-auto">
+                    <div class="boxes2 col-12 mx-auto text-center">
+                        <div class="boxIcon mx-auto"><i class="icon3 bi-bug"></i></div>
+                        <p class="p4 mt-4">فناوری علم داده ها</p><br>
+                        <p class="p5">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                            محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+                            <div class="align-items-center learnMore"><p class="learnP">بیشتر بدانید <i class="bi-chevron-left lefticon"></i></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    
+    <section class="sec4">
+
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-10 mx-auto text-center pt-4"><img class="img-fluid" src="img/01.svg" alt=""></div>
+                <div class="col-md-6 col-10 mx-auto ">
+                    <div class="d-flex align-items-center">
+                        <div class="line2"></div>
+                        <p class="p6 me-3 pt-3">درباره ما</p>
+                    </div>
+
+                    <p class="p7">ما خدمات یادگیری ماشین و هوش مصنوعی را برای شما <span style="color: #E45826;">ارائه</span> می دهیم</p>
+                    <p class="p8 text-muted">این یک واقعیت ثابت شده است که خواننده از خواندنی ها حواسش پرت می شود
+                        محتوای یک صفحه هنگام مشاهده طرح بندی آن.</p>
+
+                  
+
+                    <div class="col-12 row">
+                        <div class="col-md-6 mx-auto col-10">
+
+                            <div class="boxText1 col-12">
+                                <div class="d-flex">
+                                    <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش </p>
+                                </div>
+                            </div>
+
+                            <div class="boxText1 col-12">
+                                <div class="d-flex">
+                                    <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش </p>
+                                </div>
+                            </div>
+
+                              <div class="boxText1 col-12">
+                                <div class="d-flex">
+                                    <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 mx-auto col-10">
+
+                            
+                            <div class="boxText1 col-12">
+                                <div class="d-flex">
+                                    <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش </p>
+                                </div>
+                            </div>
+
+                            <div class="boxText1 col-12">
+                                <div class="d-flex">
+                                    <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش </p>
+                                </div>
+                            </div>
+
+                              <div class="boxText1 col-12">
+                                <div class="d-flex">
+                                    <i class="bi-check-circle-fill check1"></i><p class="me-2">نگاهی به مجموعه ما از بهترین نمایش </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                                       
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="sec5">
+        <!-- <div id="value">100</div> -->
+
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-md-3 col-sm-6 col-8 p-3 mx-auto text-center numbers">
+                    <i class="bi-stack stack"></i><br>
+                    <p class="number1" id="value1">100</p>
+                    <p class="p9"> <i class="bi-plus"></i> پروژه های انجام شده </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-8 p-3 mx-auto text-center numbers">
+                    <i class="bi-code stack"></i><br>
+                    <p class="number1" id="value2">160</p>
+                    <p class="p9"> <i class="bi-plus"></i> پروژه های انجام شده </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-8 p-3 mx-auto text-center numbers">
+                    <i class="bi-server stack"></i><br>
+                    <p class="number1" id="value3">230</p>
+                    <p class="p9"> <i class="bi-plus"></i> پروژه های انجام شده </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-8 p-3 mx-auto text-center numbers">
+                    <i class="bi-headset stack"></i><br>
+                    <p class="number1" id="value4">89</p>
+                    <p class="p9"> <i class="bi-plus"></i> پروژه های انجام شده </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="sec6">
+
+        <div class="d-flex align-items-center mx-auto text-center col-2">
+            <div class="line2 ms-1 mx-auto"></div>
+            <p class="p6 me-1 pt-3 mx-auto">سرویس ها</p>
+        </div>
+
+        <p class="p7 text-center">چیزی که ما <span>پیشنهاد</span> میدیم</p>
+
+        <div class="lineAnimation mx-auto"></div>
+
+
+            <div class="container">
+    
+                <div class="row col-8 mx-auto mt-5 pt-3">
+                    <div class="selectBox mt-2 all selectBox2 mx-auto text-center col-1">همه</div>
+                    <div class="selectBox mt-2 bank mx-auto text-center col-1">ماشین</div>
+                    <div class="selectBox mt-2 business mx-auto text-center col-1">ربات</div>
+                    <div class="selectBox mt-2 corpo mx-auto text-center col-1">تکنولوژی</div>
+                    <div class="selectBox mt-2 fin mx-auto text-center col-1">داده</div>
+                    <div class="selectBox mt-2 market mx-auto text-center col-1">سرور</div>
+                </div>
+
+
+                <div class="boxSec6 mt-5">
+
+                    <div class="col-md-4 col-12 mx-auto p-3">
+                        <div class="col-12 bg-danger image3 back1">
+                            <div class="plus1"><i class="bi-plus plus-icon2"></i></div>
+                            <div class="title2 col-10 mx-auto d-flex">
+                                <div class="col-8 me-2 p10">پروژه های پیشرفته</div>
+                                 <div class=" mx-auto text-center arrow2 p-1">
+                                     <div class="inarrow2"><i class="bi-arrow-left"></i></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-md-4 col-12 mx-auto p-3">
+                        <div class="col-12 bg-danger image3 back2 banking">
+                            <div class="plus1"><i class="bi-plus plus-icon2"></i></div>
+                            <div class="title2 col-10 mx-auto d-flex ">
+                                <div class="col-8 me-2 p10">پروژه های پیشرفته</div>
+                                 <div class=" mx-auto text-center arrow2 p-1">
+                                     <div class="inarrow2"><i class="bi-arrow-left"></i></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-md-4 col-12 mx-auto p-3">
+                        <div class="col-12 bg-danger image3 back3">
+                            <div class="plus1"><i class="bi-plus plus-icon2"></i></div>
+                            <div class="title2 col-10 mx-auto d-flex">
+                                <div class="col-8 me-2 p10">پروژه های پیشرفته</div>
+                                 <div class=" mx-auto text-center arrow2 p-1">
+                                     <div class="inarrow2"><i class="bi-arrow-left"></i></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <div class="col-md-4 col-12 mx-auto p-3">
+                        <div class="col-12 bg-danger image3 back2 busy corporate">
+                            <div class="plus1"><i class="bi-plus plus-icon2"></i></div>
+                            <div class="title2 col-10 mx-auto d-flex">
+                                <div class="col-8 me-2 p10">پروژه های پیشرفته</div>
+                                 <div class=" mx-auto text-center arrow2 p-1">
+                                     <div class="inarrow2"><i class="bi-arrow-left"></i></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-md-4 col-12 mx-auto p-3">
+                        <div class="col-12 bg-danger image3 back3 corporate">
+                            <div class="plus1"><i class="bi-plus plus-icon2"></i></div>
+                            <div class="title2 col-10 mx-auto d-flex">
+                                <div class="col-8 me-2 p10">پروژه های پیشرفته</div>
+                                 <div class=" mx-auto text-center arrow2 p-1">
+                                     <div class="inarrow2"><i class="bi-arrow-left"></i></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-md-4 col-12 mx-auto p-3">
+                        <div class="col-12 bg-danger image3 back1 corporate">
+                            <div class="plus1"><i class="bi-plus plus-icon2"></i></div>
+                            <div class="title2 col-10 mx-auto d-flex">
+                                <div class="col-8 me-2 p10">پروژه های پیشرفته</div>
+                                 <div class=" mx-auto text-center arrow2 p-1">
+                                     <div class="inarrow2"><i class="bi-arrow-left"></i></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </section>
+
+
+
+
+        <section class="sec7">
+
+            <div class="d-flex align-items-center mx-auto text-center col-2">
+                <div class="line2 ms-1 mx-auto"></div>
+                <p class="p6 me-1 pt-3 mx-auto">سرویس ها</p>
+            </div>
+    
+            <p class="p7 text-center">چیزی که ما <span>پیشنهاد</span> میدیم</p>
+    
+            <div class="lineAnimation mx-auto"></div>
+
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-3 col-8 mx-auto text-center p-2 mt-3">
+                        <div class="col-12 boxes3 back4">
+                            <div class="title3">
+                                <div class="icons d-flex">
+                                    <div class="boxIcon2"><i class="bi-whatsapp"></i></div>
+                                    <div class="boxIcon2"><i class="bi-twitter"></i></div>
+                                    <div class="boxIcon2"><i class="bi-instagram"></i></div>
+                                    <div class="boxIcon2"><i class="bi-reddit"></i></div>
+                                </div>
+                                <p class="p11 mt-1">محمد زهدی</p>
+                                <p class="p12">front end</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-8 mt-5 mt-md-0 mx-auto text-center p-2 mt-3">
+                        <div class="col-12 boxes3 back5">
+                            <div class="title3">
+                                <div class="icons d-flex">
+                                    <div class="boxIcon2"><i class="bi-whatsapp"></i></div>
+                                    <div class="boxIcon2"><i class="bi-twitter"></i></div>
+                                    <div class="boxIcon2"><i class="bi-instagram"></i></div>
+                                    <div class="boxIcon2"><i class="bi-reddit"></i></div>
+                                </div>
+                                <p class="p11 mt-1">محمد زهدی</p>
+                                <p class="p12">front end</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-8 mt-5 mt-md-0 mx-auto text-center p-2 mt-3">
+                        <div class="col-12 boxes3 back6">
+                            <div class="title3">
+                                <div class="icons d-flex">
+                                    <div class="boxIcon2"><i class="bi-whatsapp"></i></div>
+                                    <div class="boxIcon2"><i class="bi-twitter"></i></div>
+                                    <div class="boxIcon2"><i class="bi-instagram"></i></div>
+                                    <div class="boxIcon2"><i class="bi-reddit"></i></div>
+                                </div>
+                                <p class="p11 mt-1">محمد زهدی</p>
+                                <p class="p12">front end</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-8 mt-5 mt-md-0 mx-auto text-center p-2 mt-3">
+                        <div class="col-12 boxes3 back7">
+                            <div class="title3">
+                                <div class="icons d-flex">
+                                    <div class="boxIcon2"><i class="bi-whatsapp"></i></div>
+                                    <div class="boxIcon2"><i class="bi-twitter"></i></div>
+                                    <div class="boxIcon2"><i class="bi-instagram"></i></div>
+                                    <div class="boxIcon2"><i class="bi-reddit"></i></div>
+                                </div>
+                                <p class="p11 mt-1">محمد زهدی</p>
+                                <p class="p12">front end</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="sec8 text-center">
+
+            <p class="p13 ">ما خدمات با کیفیت ارائه می دهیم</p>
+            <p class="p14">ما 30 روز آزمایشی رایگان ارائه می دهیم</p>
+            <p class="p15 col-12 col-sm-10 col-md-9 mx-auto">این یک واقعیت ثابت شده است که خواننده با محتوای خواندنی حواسش پرت می شود
+                یک صفحه هنگام نگاه کردن به طرح بندی آن.</p>
+             
+            <button class="col-9 col-sm-5 col-md-4 mt-4 btn1 ">
+                <p class="pBtn">شروع دوره رایگان</p>
+            </button>   
+
+        </section>
+
+
+
+
+
+        <section class="sec9">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="d-flex align-items-center">
+                            <div class="line2"></div>
+                            <p class="p6 me-3 pt-3">درباره ما</p>
+                        </div>
+    
+                        <p class="p7">ما خدمات یادگیری ماشین و هوش مصنوعی را برای شما <span style="color: #E45826;">ارائه</span> می دهیم</p>
+    
+                        <p class="text-muted">انواع مختلفی از قسمت‌های Lorem Ipsum در دسترس است، اما اکثریت آن‌ها به شکلی دچار تغییراتی شده‌اند، با طنز تزریق شده یا کلمات تصادفی‌سازی شده که حتی به نظر نمی‌رسند.
+
+                            این یک واقعیت ثابت شده است که خواننده هنگام نگاه کردن به صفحه‌آرایش، با محتوای قابل خواندن یک صفحه، حواسش پرت می‌شود.</p>
+    
+                        <button  class="col-5 mx-auto btn2 mt-3 me-3">
+                            <p class="pBtn2">سوال کنید</p>
+                        </button>
+                    </div>
+
+                    <div class="col-md-6 mx-auto p-4 pt-5 text-center ">
+
+                        <div onclick="showask(this)" class="askBox col-md-12 p-2 pb-3 pt-3  mx-auto">          
+                            <div class="d-flex askdiv">
+                                <div><i class="bi-question-square-fill"></i> آیا ما برای آموزش مبلغی میدهیم؟</div>
+                                <i class="bi-chevron-down ms-2"></i>
+                            </div>
+                            
+                            <div class="hideAsk">
+                                <hr>
+                                <p class="text-muted text-end">ما با خشم عادلانه و بیزاری از مردانی که از جذابیت های لذت لحظه ای چنان فریب خورده اند و روحیه آنها را تضعیف کرده اند و از هوس کور شده اند را محکوم می کنیم.</p>
+                            </div>       
+                        </div>
+
+                        <div onclick="showask(this)" class="askBox col-md-12 p-2 pb-3 pt-3  mx-auto">          
+                            <div class="d-flex askdiv">
+                                <div><i class="bi-question-square-fill"></i> آیا ما برای آموزش مبلغی میدهیم؟</div>
+                                <i class="bi-chevron-down ms-2"></i>
+                            </div>
+                            
+                            <div class="hideAsk">
+                                <hr>
+                                <p class="text-muted text-end">ما با خشم عادلانه و بیزاری از مردانی که از جذابیت های لذت لحظه ای چنان فریب خورده اند و روحیه آنها را تضعیف کرده اند و از هوس کور شده اند را محکوم می کنیم.</p>
+                            </div>       
+                        </div>
+
+                        <div onclick="showask(this)" class="askBox col-md-12 p-2 pb-3 pt-3  mx-auto">          
+                            <div class="d-flex askdiv">
+                                <div><i class="bi-question-square-fill"></i> آیا ما برای آموزش مبلغی میدهیم؟</div>
+                                <i class="bi-chevron-down ms-2"></i>
+                            </div>
+                            
+                            <div class="hideAsk">
+                                <hr>
+                                <p class="text-muted text-end">ما با خشم عادلانه و بیزاری از مردانی که از جذابیت های لذت لحظه ای چنان فریب خورده اند و روحیه آنها را تضعیف کرده اند و از هوس کور شده اند را محکوم می کنیم.</p>
+                            </div>       
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+    <!-- slider card -->
+     <section class="sec10">
+
+
+        <div class="d-flex align-items-center mx-auto text-center col-2">
+            <div class="line2 ms-1 mx-auto"></div>
+            <p class="p6 me-1 pt-3 mx-auto">سرویس ها</p>
+        </div>
+
+        <p class="p7 text-center">چیزی که ما <span>پیشنهاد</span> میدیم</p>
+
+        <div class="lineAnimation mx-auto"></div>
+        
+    <!--  Demos -->
+    <section id="demos" class="mt-5" >
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="owl-carousel owl-theme">
+
+              <div class="item">
+                <div class="item1">
+                    1
+                    <i class="bi-quote"></i><br>
+                    <p class="p17">انواع مختلفی از معابر در دسترس است، اما اکثریت آسیب دیده اند
+                        تغییر به نوعی توسط تزریق.</p>
+                </div>
+                <div class="bottomBox mx-auto d-flex align-items-center">
+                    <div class="circle">
+                        <div class="img5"></div>
+                    </div>
+                    
+                        <div class="pt-3">
+                            <p class="p18">محمد زهدی</p><br>
+                            <p class="p19">frontend developer</p>
+                        </div>
+                    
+                </div>
+              </div>
+
+              <div class="item">  
+                <div class="item1">
+                    2
+                    <i class="bi-quote"></i><br>
+                    <p class="p17">انواع مختلفی از معابر در دسترس است، اما اکثریت آسیب دیده اند
+                        تغییر به نوعی توسط تزریق.</p>
+                </div>
+                <div class="bottomBox mx-auto d-flex align-items-center">
+                    <div class="circle">
+                        <div class="img5"></div>
+                    </div>
+                    
+                        <div class="pt-3">
+                            <p class="p18">محمد زهدی</p><br>
+                            <p class="p19">frontend developer</p>
+                        </div>
+                    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item1">
+                    3
+                    <i class="bi-quote"></i><br>
+                    <p class="p17">انواع مختلفی از معابر در دسترس است، اما اکثریت آسیب دیده اند
+                        تغییر به نوعی توسط تزریق.</p>
+                </div>
+                <div class="bottomBox mx-auto d-flex align-items-center">
+                    <div class="circle">
+                        <div id="backtest" class="img5"></div>
+                    </div>
+                    
+                        <div class="pt-3">
+                            <p class="p18">محمد زهدی</p><br>
+                            <p class="p19">frontend developer</p>
+                        </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item1">
+                    4
+                    <i class="bi-quote"></i><br>
+                    <p class="p17">انواع مختلفی از معابر در دسترس است، اما اکثریت آسیب دیده اند
+                        تغییر به نوعی توسط تزریق.</p>
+                </div>
+                <div class="bottomBox mx-auto d-flex align-items-center">
+                    <div class="circle">
+                        <div class="img5"></div>
+                    </div>
+                    
+                        <div class="pt-3">
+                            <p class="p18">محمد زهدی</p><br>
+                            <p class="p19">frontend developer</p>
+                        </div>
+                    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item1">
+                    5
+                    <i class="bi-quote"></i><br>
+                    <p class="p17">انواع مختلفی از معابر در دسترس است، اما اکثریت آسیب دیده اند
+                        تغییر به نوعی توسط تزریق.</p>
+                </div>
+                <div class="bottomBox mx-auto d-flex align-items-center">
+                    <div class="circle">
+                        <div class="img5"></div>
+                    </div>
+                    
+                        <div class="pt-3">
+                            <p class="p18">محمد زهدی</p><br>
+                            <p class="p19">frontend developer</p>
+                        </div>
+                    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item1">
+                    6
+                    <i class="bi-quote"></i><br>
+                    <p class="p17">انواع مختلفی از معابر در دسترس است، اما اکثریت آسیب دیده اند
+                        تغییر به نوعی توسط تزریق.</p>
+                </div>
+                <div class="bottomBox mx-auto d-flex align-items-center">
+                    <div class="circle">
+                        <div class="img5"></div>
+                    </div>
+                    
+                        <div class="pt-3">
+                            <p class="p18">محمد زهدی</p><br>
+                            <p class="p19">frontend developer</p>
+                        </div>
+                    
+                </div>
+              </div>
+             
+             
+            </div>
+          
+            <script>
+                $(document).ready(function() {
+       var owl = $('.owl-carousel');
+       owl.owlCarousel({
+         margin: 10,
+         nav: true,
+         loop: true,
+         responsive: {
+           0: {
+             items: 1
+           },
+           600: {
+             items: 3
+           },
+           1000: {
+             items: 3
+           }
+         }
+       })
+     })
+           </script>
+  
+          </div>
+        </div>
+      </section>
+     </section>
+
+   
+      
+      
+
+
+        <footer style="margin-top: 70px;">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 text-end endboxes">
+    
+                        <img class="col-4 col-md-6 img-fluid" src="img/amoozesh.png" alt="">
+                        <p class="p16 mt-3">ما انواع مختلفی از معابر در دسترس داریم، اما اکثریت آن‌ها به نوعی توسط طنز
+                            تزریقی دچار تغییر شده‌اند.</p>
+                        <p class="text-light p21"> <i class="bi-geo-alt-fill address1 ms-2"></i> کرج - میدان سپاه - خیابان
+                            شهید بهشتی</p>
+                        <p class="text-light p21"> <i class="bi-telephone-fill address1 ms-2"></i> 026-31234566</p>
+                        <p class="text-light p21"> <i class="bi-envelope-fill address1 ms-2"></i> exmple@gmail.com</p>
+                        <div class="icons2 col-8 mx-2 mt-4 d-flex">
+                            <div class="boxIcon3"><i class="bi-whatsapp"></i></div>
+                            <div class="boxIcon3"><i class="bi-twitter"></i></div>
+                            <div class="boxIcon3"><i class="bi-instagram"></i></div>
+                            <div class="boxIcon3"><i class="bi-reddit"></i></div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-md-3 mx-auto endboxes2  pt-3">
+    
+                        <p class="p20 col-12 ">لینک های سریع</p>
+                        <div class="line2 "></div>
+                        <li><i class="bi-caret-left-fill caret"></i> درباره ما</li>
+                        <li><i class="bi-caret-left-fill caret"></i> شرایط استفاده</li>
+                        <li><i class="bi-caret-left-fill caret"></i> حریم خصوصی</li>
+                        <li><i class="bi-caret-left-fill caret"></i> سرویس های ما</li>
+                        <li><i class="bi-caret-left-fill caret"></i> اعضای تیم</li>
+                        <li><i class="bi-caret-left-fill caret"></i> آخرین وبلاگ</li>
+                    </div>
+    
+                    <div class="col-md-3 mx-auto  endboxes2  pt-3  ">
+    
+                        <p class="p20 col-12 ">سرویس های ما</p>
+                        <div class="line2 "></div>
+    
+    
+                        <li><i class="bi-caret-left-fill caret"></i> درباره ما</li>
+                        <li><i class="bi-caret-left-fill caret"></i> شرایط استفاده </li>
+                        <li><i class="bi-caret-left-fill caret"></i> حریم خصوصی</li>
+                        <li><i class="bi-caret-left-fill caret"></i> سرویس های ما</li>
+                        <li><i class="bi-caret-left-fill caret"></i> اعضای تیم</li>
+                        <li><i class="bi-caret-left-fill caret"></i> آخرین وبلاگ</li>
+    
+    
+                    </div>
+    
+                    <div class="col-md-3 endboxes3 pt-3 pe-4 mb-5 ">
+    
+                        <p class="p20 col-12 ">خبرنامه</p>
+                        <div class="line2 "></div>
+    
+                        <p class="p16 mt-5">برای دریافت آخرین به روز رسانی و اخبار، در خبرنامه ما مشترک شوید</p>
+                       
+                            <input type="email" class="email1 col-8 col-md-12 p-3 mt-3" placeholder="ایمیل شما ...">
+                            <button class="col-md-11 col-8 btn1 btn3 mt-md-5 mt-3">
+                                <p class="pBtn">مشترک شوید</p>
+                            </button>
+                        
+    
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+   
+
+
+       
+
+      
+        <script src="js/highlight.js"></script>
+        <script src="js/app.js"></script> 
+        
+    <!-- <script src="js/jquery-3.6.0.js"></script> -->
+
+    <!-- //for slider card -->
+    <script src="bootstrap/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+
+   
+
+
+</body>
+
+</html>
